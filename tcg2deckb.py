@@ -43,8 +43,13 @@ if len(sys.argv) == 3:
         "Launch Party & Release Event Promos":"Launch Parties",
         "Ravnica Allegiance: Guild Kits":"Ravnica Allegiance Guild Kit",
         "Guilds of Ravnica: Guild Kits":"Guilds of Ravnica Guild Kit",
-        "Magic Game Night":"Game Night"
+        "Magic Game Night":"Game Night",
+        "Coldsnap Theme Deck Reprints":"Coldsnap Theme Decks",
+        "Timeshifted":"Time Spiral \"Timeshifted\""
         },inplace=True)
+    
+    #Remove bracketed ()[] parts from card names
+    tcgList["Name"].replace(to_replace=r'[\[\(].*[\]\)]', value="", inplace=True, regex=True)
 
     tcgList["Foil"].replace({"Normal":""},inplace=True)
 
