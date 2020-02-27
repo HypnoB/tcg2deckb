@@ -40,6 +40,7 @@ if len(sys.argv) == 3:
         # This replaces all of them with the DvsD set which seems to be enough for
         # Deckbox to import the cards, though the set will be "undefined" so you'll
         # have to fix that by hand ;__; sorry
+        "Prerelease Cards":"Prerelease Events",
         "Launch Party & Release Event Promos":"Launch Parties",
         "Ravnica Allegiance: Guild Kits":"Ravnica Allegiance Guild Kit",
         "Guilds of Ravnica: Guild Kits":"Guilds of Ravnica Guild Kit",
